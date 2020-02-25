@@ -33,6 +33,15 @@
 	<link rel="stylesheet" href="https://test.stephenshutters.com/css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="https://test.stephenshutters.com/style.css" type="text/css" />
 
+	<!-- Scripts
+	============================================= -->
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script>
+        function showIframeMapOnClick() {
+            $("#spotifyembed").html("<iframe id='iFrameMap' src='https://open.spotify.com/embed/album/28jt7pALHovaQd21ZVEwoL' width='477' height='477' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
+        }
+    </script>
+
 	<!-- One Page Module Specific Stylesheet -->
 	<link rel="stylesheet" href="https://test.stephenshutters.com/onepage.css" type="text/css" />
 	<!-- / -->
@@ -319,10 +328,8 @@
 					<div id="portfolio" class="portfolio grid-container portfolio-nomargin portfolio-full portfolio-masonry mixed-masonry clearfix">
 
 						<article class="portfolio-item pf-illustrations">
-							<div class="portfolio-image">
-								<a href="#">
-									<img src="/images/albums/forgotten-demos.jpg" alt="Forgotten Demos">
-								</a>
+							<div id="spotifyembed" class="portfolio-image">
+									<input type="image" ID="Image1" onclick="showIframeMapOnClick();return false" src="/images/albums/the-fall.jpg" width="477" height="477" alt="Forgotten Demos" />
 								<div class="portfolio-overlay">
 									<div class="portfolio-desc">
 										<h3><a href="#">Forgotten Demos</a></h3>
