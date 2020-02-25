@@ -38,14 +38,14 @@
 	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
   	<script>
-        function showIframeMapOnClick() {
-            $("#ForgottenDemosEmbed").html("<iframe id='iFrameMap' src='https://open.spotify.com/embed/album/28jt7pALHovaQd21ZVEwoL' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
+        function showForgottenDemosOnClick() {
+            $("#ForgottenDemosEmbed").html("<iframe id='ForgottenDemos' src='https://open.spotify.com/embed/album/28jt7pALHovaQd21ZVEwoL' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
         }
   		</script>
 
 			<script>
-	        function showTestIDOnClick() {
-	            $("#NothingButStaticEmbed").html("<iframe id='TestID' src='https://open.spotify.com/embed/track/5zyw8EaHdh10rEbv1M5icn' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
+	        function showNothingButStaticOnClick() {
+	            $("#NothingButStaticEmbed").html("<iframe id='NothingButStatic' src='https://open.spotify.com/embed/track/5zyw8EaHdh10rEbv1M5icn' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
 	        }
 	  		</script>
 
@@ -337,7 +337,7 @@
 						<article class="portfolio-item pf-illustrations">
 							<div id="ForgottenDemosEmbed" class="portfolio-image">
 								<input class="portfolio-image" type="image" ID="Image1" src="/images/albums/forgotten-demos.jpg" alt="Forgotten Demos" />
-								<div class="portfolio-overlay" onclick="showIframeMapOnClick();return false">
+								<div class="portfolio-overlay" onclick="showForgottenDemosOnClick();return false">
 									<div class="portfolio-desc">
 										<h3><a href>Forgotten Demos<a></h3>
 									</div>
@@ -348,7 +348,7 @@
 						<article class="portfolio-item pf-illustrations">
 							<div id="NothingButStaticEmbed" class="portfolio-image">
 								<input class="portfolio-image" type="image" ID="Image2" src="/images/albums/nothing-but-static.jpg" alt="Nothing But Static" />
-								<div class="portfolio-overlay" onclick="showTestIDOnClick();return false">
+								<div class="portfolio-overlay" onclick="showNothingButStaticOnClick();return false">
 									<div class="portfolio-desc">
 										<h3><a href>Nothing But Static<a></h3>
 									</div>
