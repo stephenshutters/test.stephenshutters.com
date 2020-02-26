@@ -2039,7 +2039,7 @@ body:not(.device-md):not(.device-sm):not(.device-xs) #header.transparent-header:
 #header,
 #header-wrap,
 #logo img {
-	height: 100px;
+	height: 70px;
 	-webkit-transition: height .4s ease, opacity .3s ease;
 	-o-transition: height .4s ease, opacity .3s ease;
 	transition: height .4s ease, opacity .3s ease;
@@ -13933,5 +13933,3 @@ body:not(.no-transition) #wrapper,
 	-webkit-text-stroke: 0px !important;
 	text-shadow: none !important;
 }
-
-
