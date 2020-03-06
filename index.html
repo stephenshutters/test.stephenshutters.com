@@ -37,6 +37,30 @@
 	============================================= -->
 	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
+	<script>
+		// Restricts input for the given textbox to the given inputFilter.
+		function setInputFilter(textbox, inputFilter) {
+		["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop"].forEach(function(event) {
+			textbox.addEventListener(event, function() {
+				if (inputFilter(this.value)) {
+					this.oldValue = this.value;
+					this.oldSelectionStart = this.selectionStart;
+					this.oldSelectionEnd = this.selectionEnd;
+				} else if (this.hasOwnProperty("oldValue")) {
+					this.value = this.oldValue;
+					this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+				} else {
+					this.value = "";
+				}
+			});
+		});
+		}
+
+		// Install input filters.
+		setInputFilter(document.getElementById("template-contactform-phone"), function(value) {
+		  return /^-?\d*$/.test(value); });
+	</script>
+
   	<script>
         function showForgottenDemosOnClick() {
             $("#ForgottenDemos").html("<iframe id='ForgottenDemos' src='https://open.spotify.com/embed/album/28jt7pALHovaQd21ZVEwoL' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
@@ -47,43 +71,43 @@
 	        function showNothingButStaticOnClick() {
 	            $("#NothingButStatic").html("<iframe id='NothingButStatic' src='https://open.spotify.com/embed/track/5zyw8EaHdh10rEbv1M5icn' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
 	        }
+	  	</script>
+
+			<script>
+	        function showTheFallOnClick() {
+	            $("#TheFall").html("<iframe id='TheFall' src='https://open.spotify.com/embed/track/58XoGbk57KDQLT2VjJqyZ2' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
+	        }
 	  		</script>
 
+				<script>
+		        function showEphemeralOnClick() {
+		            $("#Ephemeral").html("<iframe id='Ephemeral' src='https://open.spotify.com/embed/album/0DWAgmbAgx5Z843r1K2LfN' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
+		        }
+		  		</script>
+
 					<script>
-			        function showTheFallOnClick() {
-			            $("#TheFall").html("<iframe id='TheFall' src='https://open.spotify.com/embed/track/58XoGbk57KDQLT2VjJqyZ2' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
+			        function showScreenshotYourSmileOnClick() {
+			            $("#ScreenshotYourSmile").html("<iframe id='ScreenshotYourSmile' src='https://open.spotify.com/embed/track/0NTOsd0kLS9iuOe8Raj7c2' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
 			        }
 			  		</script>
 
 						<script>
-				        function showEphemeralOnClick() {
-				            $("#Ephemeral").html("<iframe id='Ephemeral' src='https://open.spotify.com/embed/album/0DWAgmbAgx5Z843r1K2LfN' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
+				        function showLachesismOnClick() {
+				            $("#Lachesism").html("<iframe id='Lachesism' src='https://open.spotify.com/embed/album/0L5ph4UZsnIThkcRXaloQx' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
 				        }
 				  		</script>
 
 							<script>
-					        function showScreenshotYourSmileOnClick() {
-					            $("#ScreenshotYourSmile").html("<iframe id='ScreenshotYourSmile' src='https://open.spotify.com/embed/track/0NTOsd0kLS9iuOe8Raj7c2' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
+					        function showIceEPOnClick() {
+					            $("#IceEP").html("<iframe id='IceEP' src='https://open.spotify.com/embed/album/2YkxNofTH8PTdEE1nWb7e3' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
 					        }
 					  		</script>
 
 								<script>
-						        function showLachesismOnClick() {
-						            $("#Lachesism").html("<iframe id='Lachesism' src='https://open.spotify.com/embed/album/0L5ph4UZsnIThkcRXaloQx' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
+						        function showJekyllHydeOnClick() {
+						            $("#JekyllHyde").html("<iframe id='JekyllHyde' src='https://open.spotify.com/embed/track/6KFeqr9DZUEszw4z3RaB0d' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
 						        }
 						  		</script>
-
-									<script>
-							        function showIceEPOnClick() {
-							            $("#IceEP").html("<iframe id='IceEP' src='https://open.spotify.com/embed/album/2YkxNofTH8PTdEE1nWb7e3' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
-							        }
-							  		</script>
-
-										<script>
-								        function showJekyllHydeOnClick() {
-								            $("#JekyllHyde").html("<iframe id='JekyllHyde' src='https://open.spotify.com/embed/track/6KFeqr9DZUEszw4z3RaB0d' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
-								        }
-								  		</script>
 
 
 	<!-- One Page Module Specific Stylesheet -->
