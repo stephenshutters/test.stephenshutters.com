@@ -13950,3 +13950,20 @@ body:not(.no-transition) #wrapper,
   bottom: 0;
   background: white;
 }
+
+/* ----------------------------------------------------------------
+	Instagram Feed Widget
+-----------------------------------------------------------------*/
+
+#Instafeed {
+  position: relative;
+}
+#Instafeed:after {
+  content: "";
+  display: block;
+  height: 55px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: white;
+}
