@@ -13968,3 +13968,21 @@ body:not(.no-transition) #wrapper,
   background: #282828;
 	z-index: 999999;
 }
+
+/* ----------------------------------------------------------------
+	Twitter Feed Widget
+-----------------------------------------------------------------*/
+
+#Tweetfeed {
+  position: relative;
+}
+#Tweetfeed:after {
+  content: "";
+  display: block;
+  height: 44px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: white;
+	z-index: 999999;
+}
