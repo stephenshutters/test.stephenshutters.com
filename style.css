@@ -13975,6 +13975,7 @@ body:not(.no-transition) #wrapper,
 
 #Tweetfeed {
   position: relative;
+	background: #F9F9F9;
 }
 #Tweetfeed:after {
   content: "";
