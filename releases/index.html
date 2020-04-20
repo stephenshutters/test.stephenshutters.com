@@ -92,6 +92,18 @@
 				}
 		</script>
 
+		<script>
+				function showSeasonsOnClick() {
+						$("#Seasons").html("<iframe id='Seasons' src='https://open.spotify.com/embed/album/7oDkbzeVzy4wF1MIAK5LYQ' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
+				}
+		</script>
+
+		<script>
+				function showBigFishTallTaleOnClick() {
+						$("#BigFishTallTale").html("<iframe id='BigFishTallTale' src='https://open.spotify.com/embed/album/4qIcay8urGIAoHXlQvnJmP' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
+				}
+		</script>
+
 
 	<!-- Document Title
 	============================================= -->
@@ -179,30 +191,27 @@
 									<div class="portfolio-desc">
 										<h3><a href="#">Forgotten Demos</a></h3>
 									</div>
-									<a href="" onclick="showForgottenDemosOnClick();return false" class="left-icon" data-lightbox="image"><i class="icon-spotify"></i></a>
-									<a href="https://geo.music.apple.com/us/album/forgotten-demos-demo-ep/1496490966?mt=1&app=music&at=10l6Xd" target="_blank" class="right-icon"><i class="icon-apple"></i></a>
+									<a href="" onclick="showForgottenDemosOnClick();return false" class="left-icon si-itunes" data-lightbox="image"><i class="icon-spotify"></i></a>
+									<a href="https://geo.music.apple.com/us/album/forgotten-demos-demo-ep/1496490966?mt=1&app=music&at=10l6Xd" target="_blank" class="right-icon si-itunes"><i class="icon-apple"></i></a>
 								</div>
 							</div>
 						</article>
 
 						<article class="portfolio-item">
-							<div class="portfolio-image">
-								<a href="#">
-									<img src="../images/albums/nothing-but-static.jpg" alt="Nothing but Static">
-								</a>
+							<div id="NothingButStatic" class="portfolio-image">
+								<input class="portfolio-image" type="image" ID="Image2" src="../images/albums/nothing-but-static.jpg" alt="Nothing but Static" />
 								<div class="portfolio-overlay">
 									<div class="portfolio-desc">
 										<h3><a href="#">Nothing but Static</a></h3>
-										<span><a href="#">Media</a>, <a href="#">Icons</a></span>
 									</div>
-									<a href="http://is5.mzstatic.com/image/thumb/Music128/v4/4f/92/e1/4f92e190-25f3-de42-c5f8-e8f0481b8773/source/100000x100000-999.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="#" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="" onclick="showNothingButStaticOnClick();return false" class="left-icon si-itunes" data-lightbox="image"><i class="icon-spotify"></i></a>
+									<a href="https://geo.music.apple.com/us/album/nothing-but-static-single/1439361348?mt=1&app=music&at=10l6Xd" target="_blank" class="right-icon si-itunes"><i class="icon-apple"></i></a>
 								</div>
 							</div>
 						</article>
 
 						<article class="portfolio-item">
-							<div class="portfolio-image">
+							<div id="TheFall" class="portfolio-image">
 								<a href="#">
 									<img src="../images/albums/the-fall.jpg" alt="The Fall">
 								</a>
@@ -218,7 +227,7 @@
 						</article>
 
 						<article class="portfolio-item">
-							<div class="portfolio-image">
+							<div id="Ephemeral" class="portfolio-image">
 								<a href="#">
 									<img src="../images/albums/ephemeral.jpg" alt="Ephemeral">
 								</a>
@@ -234,7 +243,7 @@
 						</article>
 
 						<article class="portfolio-item">
-							<div class="portfolio-image">
+							<div id="ScreenshotYourSmile" class="portfolio-image">
 								<a href="#">
 									<img src="../images/albums/screenshot-your-smile.jpg" alt="Screenshot Your Smile">
 								</a>
@@ -250,7 +259,7 @@
 						</article>
 
 						<article class="portfolio-item">
-							<div class="portfolio-image">
+							<div id="Lachesism" class="portfolio-image">
 								<a href="#">
 									<img src="../images/albums/lachesism.jpg" alt="Lachesism">
 								</a>
@@ -266,7 +275,7 @@
 						</article>
 
 						<article class="portfolio-item">
-							<div class="portfolio-image">
+							<div id="IceEP" class="portfolio-image">
 								<a href="#">
 									<img src="../images/albums/ice-ep.jpg" alt="Ice EP">
 								</a>
@@ -282,7 +291,7 @@
 						</article>
 
 						<article class="portfolio-item">
-							<div class="portfolio-image">
+							<div id="JekyllHyde" class="portfolio-image">
 								<a href="#">
 									<img src="../images/albums/jekyll-hyde.jpg" alt="Jekyll / Hyde">
 								</a>
@@ -298,7 +307,7 @@
 						</article>
 
 						<article class="portfolio-item">
-							<div class="portfolio-image">
+							<div id="Seasons" class="portfolio-image">
 								<a href="#">
 									<img src="../images/albums/seasons.jpg" alt="Seasons">
 								</a>
@@ -314,7 +323,7 @@
 						</article>
 
 						<article class="portfolio-item">
-							<div class="portfolio-image">
+							<div id="BigFishTallTale" class="portfolio-image">
 								<a href="#">
 									<img src="../images/albums/big-fish-tall-tale.jpg" alt="Big Fish, Tall Tale">
 								</a>
