@@ -13983,6 +13983,6 @@ body:not(.no-transition) #wrapper,
   width: 100%;
   position: absolute;
   bottom: 0;
-  background: white;
+  background: #F9F9F9;
 	z-index: 999999;
 }
