@@ -40,6 +40,59 @@
 	<link rel="stylesheet" href="../css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
+	<!-- Spotify Embed Scripts
+	============================================= -->
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+  	<script>
+        function showForgottenDemosOnClick() {
+            $("#ForgottenDemos").html("<iframe id='ForgottenDemos' src='https://open.spotify.com/embed/album/28jt7pALHovaQd21ZVEwoL' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
+        }
+  	</script>
+
+		<script>
+				function showNothingButStaticOnClick() {
+						$("#NothingButStatic").html("<iframe id='NothingButStatic' src='https://open.spotify.com/embed/track/5zyw8EaHdh10rEbv1M5icn' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
+				}
+		</script>
+
+		<script>
+				function showTheFallOnClick() {
+						$("#TheFall").html("<iframe id='TheFall' src='https://open.spotify.com/embed/track/58XoGbk57KDQLT2VjJqyZ2' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
+				}
+		</script>
+
+		<script>
+				function showEphemeralOnClick() {
+						$("#Ephemeral").html("<iframe id='Ephemeral' src='https://open.spotify.com/embed/album/0DWAgmbAgx5Z843r1K2LfN' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
+				}
+		</script>
+
+		<script>
+				function showScreenshotYourSmileOnClick() {
+						$("#ScreenshotYourSmile").html("<iframe id='ScreenshotYourSmile' src='https://open.spotify.com/embed/track/0NTOsd0kLS9iuOe8Raj7c2' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
+				}
+		</script>
+
+		<script>
+				function showLachesismOnClick() {
+						$("#Lachesism").html("<iframe id='Lachesism' src='https://open.spotify.com/embed/album/0L5ph4UZsnIThkcRXaloQx' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
+				}
+		</script>
+
+		<script>
+				function showIceEPOnClick() {
+						$("#IceEP").html("<iframe id='IceEP' src='https://open.spotify.com/embed/album/2YkxNofTH8PTdEE1nWb7e3' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
+				}
+		</script>
+
+		<script>
+				function showJekyllHydeOnClick() {
+						$("#JekyllHyde").html("<iframe id='JekyllHyde' src='https://open.spotify.com/embed/track/6KFeqr9DZUEszw4z3RaB0d' width='100%' height='100%' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
+				}
+		</script>
+
+
 	<!-- Document Title
 	============================================= -->
 	<title>Releases</title>
@@ -120,17 +173,14 @@
 					<div id="portfolio" class="portfolio grid-container portfolio-3 clearfix">
 
 						<article class="portfolio-item">
-							<div class="portfolio-image">
-								<a href="#">
-									<img src="../images/albums/forgotten-demos.jpg" alt="Forgotten Demos">
-								</a>
+							<div id="ForgottenDemos" class="portfolio-image">
+								<input class="portfolio-image" type="image" ID="Image1" src="../images/albums/forgotten-demos.jpg" alt="Forgotten Demos" />
 								<div class="portfolio-overlay">
 									<div class="portfolio-desc">
 										<h3><a href="#">Forgotten Demos</a></h3>
-										<span><a href="#">Media</a>, <a href="#">Icons</a></span>
 									</div>
-									<a href="http://is5.mzstatic.com/image/thumb/Music113/v4/a2/8e/4c/a28e4cd8-c20c-f5d5-8af2-4ea55f5b15aa/source/100000x100000-999.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="#" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="" onclick="showForgottenDemosOnClick();return false" class="left-icon" data-lightbox="image"><i class="icon-spotify"></i></a>
+									<a href="https://geo.music.apple.com/us/album/forgotten-demos-demo-ep/1496490966?mt=1&app=music&at=10l6Xd" target="_blank" class="right-icon"><i class="icon-apple"></i></a>
 								</div>
 							</div>
 						</article>
