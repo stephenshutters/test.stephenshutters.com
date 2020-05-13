@@ -13994,6 +13994,7 @@ body:not(.no-transition) #wrapper,
 
 .spotify-container {
     position: relative;
+		height: 0;
 		padding-bottom: 100%;
 		overflow: hidden;
 }
