@@ -13995,7 +13995,7 @@ body:not(.no-transition) #wrapper,
 .spotify-container {
     position: relative;
     overflow: hidden;
-    padding-top: 50%;
+    padding-bottom: 100%;
 }
 
 .spotify-container iframe {
